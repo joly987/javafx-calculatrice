@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="425.0" prefWidth="557.0" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SimpleController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="482.0" prefWidth="566.0">
+         <children>
+            <GridPane layoutY="119.0" prefHeight="298.0" prefWidth="315.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button fx:id="delete" focusTraversable="false" mnemonicParsing="false" onAction="#system" prefHeight="62.0" prefWidth="94.0" text="CE" GridPane.columnIndex="1">
+                  <effect>
+                        <Lighting diffuseConstant="2.0">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant>
+                                 <color>
+                                    <Color red="1.0" green="0.2823529541492462" blue="0.2823529541492462" />
+                                 </color>
+                              </Light.Distant>
+                           </light>
+                        </Lighting>
+                     </effect></Button>
+                  <Button fx:id="trois" focusTraversable="false" mnemonicParsing="false" onAction="#boutton" prefHeight="58.0" prefWidth="81.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <effect>
+                        <Lighting diffuseConstant="2.0">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant>
+                                 <color>
+                                    <Color red="0.364705890417099" green="0.9490196108818054" blue="0.27450981736183167" />
+                                 </color>
+                              </Light.Distant>
+                           </light>
+                        </Lighting>
+                     </effect></Button>
+                  <Button fx:id="deux" focusTraversable="false" mnemonicParsing="false" onAction="#boutton" prefHeight="58.0" prefWidth="80.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <effect>
+                        <Lighting diffuseConstant="2.0">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant>
+                                 <color>
+                                    <Color red="0.364705890417099" green="0.9490196108818054" blue="0.27450981736183167" />
+                                 </color>
+                              </Light.Distant>
+                           </light>
+                        </Lighting>
+                     </effect></Button>
+                  <Button fx:id="clear" focusTraversable="false" mnemonicParsing="false" onAction="#boutton" prefHeight="76.0" prefWidth="92.0" text="C" GridPane.columnIndex="2">
+                     <effect>
+                        <Lighting diffuseConstant="2.0">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant>
+                                 <color>
+                                    <Color red="1.0" green="0.2823529541492462" blue="0.2823529541492462" />
+                                 </color>
+                              </Light.Distant>
+                           </light>
+                        </Lighting>
+                     </effect></Button>
+                  <Button fx:id="supp" focusTraversable="false" mnemonicParsing="false" onAction="#boutton" prefHeight="118.0" prefWidth="145.0" text="PREC" GridPane.columnIndex="3">
+                     <effect>
+                        <Lighting diffuseConstant="2.0">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant>
+                                 <color>
+                                    <Color red="1.0" green="0.2823529541492462" blue="0.2823529541492462" />
+                                 </color>
+                              </Light.Distant>
+                           </light>
+                        </Lighting>
+                     </effect></Button>
+                  <Button fx:id="diviser" focusTraversable="false" mnemonicParsing="false" onAction="#boutton" prefHeight="81.0" prefWidth="127.0" text="/" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <effect>
+                        <Lighting diffuseConstant="2.0">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant>
+                                 <color>
+                                    <Color red="0.47058823704719543" green="0.4313725531101227" blue="1.0" />
+                                 </color>
+                              </Light.Distant>
+                           </light>
+                        </Lighting>
+                     </effect></Button>
+                  <Button fx:id="multi" focusTraversable="false" mnemonicParsing="false" onAction="#boutton" prefHeight="81.0" prefWidth="101.0" text="X" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <effect>
+                        <Lighting diffuseConstant="2.0">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant>
+                                 <color>
+                                    <Color red="0.47058823704719543" green="0.4313725531101227" blue="1.0" />
+                                 </color>
+                              </Light.Distant>
+                           </light>
+                        </Lighting>
+                     </effect></Button>
+                  <Button fx:id="soustraction" focusTraversable="false" mnemonicParsing="false" onAction="#boutton" prefHeight="135.0" prefWidth="162.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <effect>
+                        <Lighting diffuseConstant="2.0">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant>
+                                 <color>
+                                    <Color red="0.47058823704719543" green="0.4313725531101227" blue="1.0" />
+                                 </color>
+                              </Light.Distant>
+                           </light>
+                        </Lighting>
+                     </effect></Button>
+                  <Button fx:id="addition" focusTraversable="false" mnemonicParsing="false" onAction="#boutton" prefHeight="138.0" prefWidth="155.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                     <effect>
+                        <Lighting diffuseConstant="2.0">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant>
+                                 <color>
+                                    <Color red="0.47058823704719543" green="0.4313725531101227" blue="1.0" />
+                                 </color>
+                              </Light.Distant>
+                           </light>
+                        </Lighting>
+                     </effect></Button>
+                  <Button fx:id="quatre" focusTraversable="false" mnemonicParsing="false" onAction="#boutton" prefHeight="110.0" prefWidth="131.0" text="4" GridPane.rowIndex="3">
+                     <effect>
+                        <Lighting diffuseConstant="2.0">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant>
+                                 <color>
+                                    <Color red="0.364705890417099" green="0.9490196108818054" blue="0.27450981736183167" />
+                                 </color>
+                              </Light.Distant>
+                           </light>
+                        </Lighting>
+                     </effect></Button>
+                  <Button fx:id="cinq" focusTraversable="false" mnemonicParsing="false" onAction="#boutton" prefHeight="101.0" prefWidth="154.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <effect>
+                        <Lighting diffuseConstant="2.0">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant>
+                                 <color>
+                                    <Color red="0.364705890417099" green="0.9490196108818054" blue="0.27450981736183167" />
+                                 </color>
+                              </Light.Distant>
+                           </light>
+                        </Lighting>
+                     </effect></Button>
+                  <Button fx:id="six" focusTraversable="false" mnemonicParsing="false" onAction="#boutton" prefHeight="96.0" prefWidth="140.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <effect>
+                        <Lighting diffuseConstant="2.0">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant>
+                                 <color>
+                                    <Color red="0.364705890417099" green="0.9490196108818054" blue="0.27450981736183167" />
+                                 </color>
+                              </Light.Distant>
+                           </light>
+                        </Lighting>
+                     </effect></Button>
+                  <Button fx:id="neuf" focusTraversable="false" mnemonicParsing="false" onAction="#boutton" prefHeight="80.0" prefWidth="127.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <effect>
+                        <Lighting diffuseConstant="2.0">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant>
+                                 <color>
+                                    <Color red="0.364705890417099" green="0.9490196108818054" blue="0.27450981736183167" />
+                                 </color>
+                              </Light.Distant>
+                           </light>
+                        </Lighting>
+                     </effect></Button>
+                  <Button fx:id="sept" focusTraversable="false" mnemonicParsing="false" onAction="#boutton" prefHeight="115.0" prefWidth="177.0" text="7" GridPane.rowIndex="4">
+                     <effect>
+                        <Lighting diffuseConstant="2.0">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant>
+                                 <color>
+                                    <Color red="0.364705890417099" green="0.9490196108818054" blue="0.27450981736183167" />
+                                 </color>
+                              </Light.Distant>
+                           </light>
+                        </Lighting>
+                     </effect></Button>
+                  <Button fx:id="huit" focusTraversable="false" mnemonicParsing="false" onAction="#boutton" prefHeight="80.0" prefWidth="158.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <effect>
+                        <Lighting diffuseConstant="2.0">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant>
+                                 <color>
+                                    <Color red="0.364705890417099" green="0.9490196108818054" blue="0.27450981736183167" />
+                                 </color>
+                              </Light.Distant>
+                           </light>
+                        </Lighting>
+                     </effect></Button>
+                  <Button fx:id="zero" focusTraversable="false" mnemonicParsing="false" onAction="#boutton" prefHeight="132.0" prefWidth="168.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <effect>
+                        <Lighting diffuseConstant="2.0">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant>
+                                 <color>
+                                    <Color red="0.364705890417099" green="0.9490196108818054" blue="0.27450981736183167" />
+                                 </color>
+                              </Light.Distant>
+                           </light>
+                        </Lighting>
+                     </effect></Button>
+                  <Button fx:id="virgule" focusTraversable="false" mnemonicParsing="false" onAction="#boutton" prefHeight="91.0" prefWidth="134.0" text="," GridPane.columnIndex="2" GridPane.rowIndex="5">
+                     <effect>
+                        <Lighting diffuseConstant="2.0">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant>
+                                 <color>
+                                    <Color red="0.364705890417099" green="0.9490196108818054" blue="0.27450981736183167" />
+                                 </color>
+                              </Light.Distant>
+                           </light>
+                        </Lighting>
+                     </effect></Button>
+                  <Button cancelButton="true" disable="true" focusTraversable="false" mnemonicParsing="false" opacity="0.36" prefHeight="67.0" prefWidth="98.0" />
+                  <Button cancelButton="true" disable="true" focusTraversable="false" mnemonicParsing="false" opacity="0.36" prefHeight="114.0" prefWidth="165.0" GridPane.rowIndex="1" />
+                  <Button cancelButton="true" disable="true" focusTraversable="false" mnemonicParsing="false" opacity="0.36" prefHeight="95.0" prefWidth="155.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button cancelButton="true" disable="true" focusTraversable="false" mnemonicParsing="false" opacity="0.36" prefHeight="140.0" prefWidth="183.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Button cancelButton="true" disable="true" focusTraversable="false" mnemonicParsing="false" opacity="0.36" prefHeight="127.0" prefWidth="191.0" GridPane.rowIndex="5" />
+                  <Button fx:id="un" focusTraversable="false" mnemonicParsing="false" onAction="#boutton" prefHeight="73.0" prefWidth="85.0" text="1" GridPane.rowIndex="2">
+                     <effect>
+                        <Lighting diffuseConstant="2.0">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant>
+                                 <color>
+                                    <Color red="0.364705890417099" green="0.9490196108818054" blue="0.27450981736183167" />
+                                 </color>
+                              </Light.Distant>
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Button>
+                  <Button fx:id="egale" defaultButton="true" mnemonicParsing="false" onAction="#boutton" prefHeight="161.0" prefWidth="261.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                     <effect>
+                        <InnerShadow choke="0.81" height="21.23" radius="8.9775" width="16.68">
+                           <color>
+                              <Color red="1.0" green="0.6873198747634888" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                  </Button>
+               </children>
+            </GridPane>
+            <TextArea editable="false" focusTraversable="false" prefHeight="0.0" prefWidth="556.0" text="Calculatrice">
+               <effect>
+                  <Lighting diffuseConstant="1.22" specularConstant="0.45">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant>
+                           <color>
+                              <Color red="0.36000001430511475" green="0.7440000176429749" blue="1.0" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="NONE" />
+               </cursor></TextArea>
+            <Label fx:id="historique0" layoutX="330.0" layoutY="138.0" prefHeight="18.0" prefWidth="212.0" />
+            <Label fx:id="resultat0" focusTraversable="false" layoutX="330.0" layoutY="156.0" prefHeight="18.0" prefWidth="212.0" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="historique1" layoutX="330.0" layoutY="180.0" prefHeight="18.0" prefWidth="212.0" textAlignment="CENTER" />
+            <Label fx:id="resultat1" focusTraversable="false" layoutX="330.0" layoutY="198.0" prefHeight="18.0" prefWidth="212.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="historique2" layoutX="330.0" layoutY="223.0" prefHeight="18.0" prefWidth="212.0" textAlignment="CENTER" />
+            <Label fx:id="resultat2" focusTraversable="false" layoutX="330.0" layoutY="241.0" prefHeight="18.0" prefWidth="212.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="historique3" focusTraversable="false" layoutX="330.0" layoutY="265.0" prefHeight="18.0" prefWidth="212.0" textAlignment="CENTER" />
+            <Label fx:id="resultat3" layoutX="330.0" layoutY="283.0" prefHeight="18.0" prefWidth="212.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="historique4" layoutX="330.0" layoutY="305.0" prefHeight="18.0" prefWidth="212.0" textAlignment="CENTER" />
+            <Label fx:id="resultat4" focusTraversable="false" layoutX="330.0" layoutY="323.0" prefHeight="18.0" prefWidth="212.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <ImageView fitHeight="38.0" fitWidth="65.0" layoutX="490.0" layoutY="430.0" preserveRatio="true">
+               <image>
+                  <Image url="@../IMAGE/recycle-bin.jpeg" />
+               </image></ImageView>
+            <Button fx:id="trash" focusTraversable="false" layoutX="491.0" layoutY="429.0" mnemonicParsing="false" onAction="#boutton" opacity="0.0" prefHeight="38.0" prefWidth="32.0" text="Button" />
+            <Label fx:id="ecrant" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="7.0" layoutY="41.0" prefHeight="68.0" prefWidth="297.0" textAlignment="CENTER">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="373.0" layoutY="56.0" prefHeight="38.0" prefWidth="142.0" text="HISTORIQUE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
